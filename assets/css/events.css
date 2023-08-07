@@ -1,0 +1,157 @@
+.my-content-cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #FFF;
+}
+
+.events-year{
+	padding: 15px;
+	margin: 10px 5px;
+	position: relative;
+	border-radius: 15px;
+}
+
+.events-year::after{
+	position: absolute;
+	top: 40vh;
+	left: 30px;
+	content: attr(yr);
+	color: #FFF;
+	font-size: 10vmin;
+	text-shadow: 0px 0px 15px #000, 0px 0px 5px #000;
+}
+
+.events-year#new-events::after{
+	font-size: 5vmin;
+	top: 45vh;
+}
+
+@media screen and (min-width: 890px){
+	.events-year{
+		max-width: 460px;
+		width: 100%;
+	}
+
+	.events-year#new-events{
+		max-width: none;
+	}
+}
+
+@media screen and (max-width: 890px){
+	.events-year{
+		width: 100vw;
+	}
+}
+
+.my-main-container{
+	position: relative;
+	height: auto;
+	width: 100%;
+	padding: 0px 5px 4px 5px;
+	position: relative;
+	border-radius: 0px 0px 10px 10px;;
+}
+
+body.light .my-main-container{
+	background: var(--main-bright-color);
+}
+
+body.dark .my-main-container{
+	background: var(--main-dark-color);
+}
+
+.my-main-container summary{
+	padding: 5px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.my-main-container ul{
+	margin: 0;
+}
+
+.my-main-container ul li a{
+	color: #FFF;
+	text-decoration: none;
+	padding: 0 5px;
+	transition: 0.3s;
+	border-radius: 5px;
+	line-height: 2.5;
+}
+
+.my-main-container ul li a:hover{
+	color: #FFF;
+	background: #0009;
+}
+
+.s-months{
+	width: 100%;
+	transform: translate(-15px);
+}
+
+.my-main-container::after{
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	top: 0;
+	left: 0;
+	content: '';
+	transform: translateY(-4px);
+}
+
+body.dark .my-main-container::after{
+	background: var(--main-dark-color);
+}
+
+body.light .my-main-container::after{
+	background: var(--main-bright-color);
+}
+
+.events-year .year-img{
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+	position: relative;
+	height: 100%;
+	height: 50vh;
+}
+
+.s-months a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.events-year#year-2020 .year-img{
+	background-image: url('../img/Febrero_2020/photo5.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.events-year#year-2019 .year-img{
+	background-image: url('../img/Octubre_2019/Seguidor.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.events-year#new-events .year-img{
+	background-image: url('../img/misc/ISO.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+details[open] summary ~ *{
+	animation: fd 0.5s linear;
+}
+
+@keyframes fd{
+	0%{
+		opacity: 0;
+		transform: translateY(-5px);
+	} 50% {
+		opacity: 0.5;
+		transform: translateY(0px);
+	} 100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}

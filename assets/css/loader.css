@@ -1,0 +1,99 @@
+.load-page{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background: #000;
+}
+
+.loader{
+ width: 200px;
+ height: 200px;
+ position: absolute;
+ left: calc(50% - 100px);
+ top: calc(50% - 100px);
+ box-sizing: border-box;
+ z-index: 1000;
+}
+
+.loader .face{
+ position: absolute;
+ border: 2px solid #121212;
+}
+
+.loader .face.face1{
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: #030303;
+ box-shadow: 0 0 10px rgba(0,0,0,1);
+ border-radius: 50%;
+ border-left: 2px solid #002855;
+ border-top: 2px solid #002855;
+ animation: animate 3s linear infinite;
+}
+
+.loader .face.face2{
+ top: 30px;
+ left: 30px;
+ right: 30px;
+ bottom: 30px;
+ background: #090909;
+ box-shadow: 0 0 10px rgba(0,0,0,1);
+ border-radius: 50%;
+ border-right: 2px solid #00B5E2;
+ border-bottom: 2px solid #00B5E2;
+ animation: animate2 3s linear infinite;
+}
+
+.loader .face .circle{
+ position: absolute;
+ top: calc(50% - 1px);
+ left: 50%;
+ width: 50%;
+ height: 2px;
+ transform-origin: left;
+}
+
+.loader .face.face1 .circle{transform: rotate(-45deg);}
+.loader .face.face2 .circle{transform: rotate(-45deg);}
+
+.loader .face .circle::before{
+ content: '';
+ position: absolute;
+ width: 10px;
+ height: 10px;
+ border-radius: 50%;
+ background: #FFf;
+ top: -4px;
+ right: -6px;
+}
+
+.loader .face.face1 .circle::before{
+ background: #002855;
+ box-shadow: 0 0 20px #002855,
+             0 0 40px #002855,
+             0 0 60px #002855,
+             0 0 80px #002855,
+             0 0 100px #002855,
+             0 0 0 5px rgba(0,40,85,0.2);
+}
+
+.loader .face.face2 .circle::before{
+ background: #00B5E2;
+ box-shadow: 0 0 20px #00B5E2,
+             0 0 40px #00B5E2,
+             0 0 60px #00B5E2,
+             0 0 80px #00B5E2,
+             0 0 100px #00B5E2,
+             0 0 0 5px rgba(0,181,226,0.2);
+}
+
+@keyframes animate{0%{transform: rotate(0deg)}100%{transform: rotate(360deg)}}
+
+@keyframes animate2{0%{transform: rotate(360deg)}100%{transform: rotate(-360deg)}}
+
+.load-page img{width: 120px; position: absolute; top: calc(50% - 33px); left: calc(50% - 60px); z-index: 1000;}

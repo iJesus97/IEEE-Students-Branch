@@ -1,0 +1,107 @@
+.month-container summary#CursoENFESTO2019::after{
+   background-image: url('../img/Diciembre_2019/photo.jpg');
+}
+
+.month-container summary#CursoASoftware2019::after{
+   background-image: url('../img/Noviembre_2019/photo1.jpeg');
+}
+
+.month-container summary#EncuentroEstatalJovenesInv::after{
+   background-image: url('../img/Noviembre_2019/photo6.jpg');
+}
+
+.month-container summary#NEneitLocal2019::after{
+   background-image: url('../img/Noviembre_2019/photo4.jpg');
+}
+
+.month-container summary#EneitNacional2019::after{
+   background-image: url('../img/Noviembre_2019/photo5.jpg');
+}
+
+.month-container summary#CongresoITSA2019::after{
+   background-image: url('../img/Noviembre_2019/photo7.jpg');
+}
+
+.month-container summary#VisitaIndustrialCAudi2019::after{
+   background-image: url('../img/Octubre_2019/photo9.jpg');
+}
+
+.month-container summary#ConcursoCLiterarias2019::after{
+   background-image: url('../img/Octubre_2019/photo8.jpg');
+}
+
+.month-container summary#ConferenciaDPaR::after{
+   background-image: url('../img/Octubre_2019/photo7.jpg');
+}
+
+.month-container summary#RallyLatinoamericano2019::after{
+   background-image: url('../img/Octubre_2019/photo5.jpg');
+}
+
+.month-container summary#DiaIEEE2019::after{
+   background-image: url('../img/Octubre_2019/photo1.jpg');
+}
+
+.month-container summary#EneitRegional2019::after{
+   background-image: url('../img/Septiembre_2019/photo8.jpg');
+}
+
+.month-container summary#HackaTec2019::after{
+   background-image: url('../img/Septiembre_2019/photo3.jpeg');
+}
+
+.month-container summary#ConvivenciaSixFlags2019::after{
+   background-image: url('../img/Septiembre_2019/photo2.jpg');
+}
+
+.month-container summary#MMexicanaITSA2019::after{
+   background-image: url('../img/Septiembre_2019/photo1.jpg');
+}
+
+.month-container summary#CursoRoboticaBasica2019::after{
+   background-image: url('../img/Agosto_2019/photo2.jpg');
+}
+
+.month-container summary#ProgramaTLince::after{
+   background-image: url('../img/Julio_2019/photo.jpg');
+}
+
+.month-container summary#EntregaTapitas2019::after{
+   background-image: url('../img/Junio_2019/photo1.jpg');
+}
+
+.month-container summary#MEneitLocal2019::after{
+   background-image: url('../img/Mayo_2019/photo10.jpg');
+}
+
+.month-container summary#ConferenciaUTSOBMRI::after{
+   background-image: url('../img/Mayo_2019/photo7.jpg');
+}
+
+.month-container summary#VisitaIndustrialBimbo2019::after{
+   background-image: url('../img/Mayo_2019/photo5.jpg');
+}
+
+.month-container summary#TomaProtestaIEEE-ITSA::after{
+   background-image: url('../img/Mayo_2019/photo1.jpg');
+}
+
+.month-container summary#CursoMicroPython::after{
+   background-image: url('../img/Abril_2019/photo6.jpeg');
+}
+
+.month-container summary#ColectaJuguetes2019::after{
+   background-image: url('../img/Abril_2019/photo5.jpg');
+}
+
+.month-container summary#TalentLand2019::after{
+   background-image: url('../img/Abril_2019/photo1.jpeg');
+}
+
+.month-container summary#AceptacionRamaIEEE-ITSA::after{
+   background-image: url('../img/misc/tec.jpg');
+}
+
+.month-container summary#ConferenciaMySIndustrial::after{
+   background-image: url('../img/Marzo_2019/photo.jpg');
+}

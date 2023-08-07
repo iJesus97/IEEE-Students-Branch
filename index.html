@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/loader.css">
+		<link rel="stylesheet" href="assets/css/indexselect.css">
+		<link rel="icon" type="image/ico" href="assets/svg/ieeerama-vector-logo-ico-original-blue.svg">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="assets/js/jquery.js"></script>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="theme-color" content="#000">
+		<meta charset="UTF-8">
+		<meta property="og:image" content="img/RamaGeneraciones/segundaGeneracion.jpg">
+		<title>IEEE Student Branch</title>
+	</head>sweet_antonio13
+	<body>
+		<div class="servicios-IEEE">
+			<div class="meta-nav">
+				<p>
+					<a href="https://www.ieee.org/index.html">IEEE.org</a> &#160;|&#160; 
+					<a href="https://www.ieeexplore.ieee.org/Xplore/guesthome.jsp">IEEE <em>Xplore</em> Digital Library</a> &#160;|&#160; 
+					<a href="https://standards.ieee.org/">IEEE Standards</a> &#160;|&#160; 
+					<a href="https://spectrum.ieee.org/">IEEE Spectrum</a> &#160;|&#160; 
+					<a href="https://www.ieee.org/sitemap.html">More Sites</a>
+					<a href="https://ieee.org"></a>
+				</p>
+			</div>
+		</div>
+		<div id="transition-components-demo" class="main-content">
+			<div class="controls">
+				<div><input v-model="view" type="radio" value="v-a" id="a" name="view"><label for="a">English</label></div>
+				<div><label for="b">Español</label><input v-model="view" type="radio" value="v-b" id="b" name="view"></div>
+			</div>
+			<transition name="component-fade" mode="out-in">
+			  <component v-bind:is="view"></component>
+			</transition>
+		</div>
+		<footer>
+			<div id="my-loader-page" class="load-page">
+				<div id="loader-page" class="loader">
+					<div class="face face1">
+						<div class="circle"></div>
+						<div class="face face2">
+							<div class="circle"></div>
+						</div>
+					</div>
+				</div>
+				<img src="assets/svg/ieeerama-vector-logo.svg">
+			</div>
+			<script src="assets/js/functions.js"></script>
+			<script src="assets/js/mainindex.js"></script>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    z-index: -1;
+}
+
+.event-container{
+    height: auto;
+    overflow: hidden;
+    margin: 20px 0;
+    position: relative;
+    min-height: 33vh;
+    border-radius: 15px;
+    padding: 0 5px;
+}
+
+body.light .event-container{
+    background-color: #0001;
+}
+
+body.dark .event-container{
+    background-color: #FFF1;
+}
+
+.event-container input{
+    height: 33vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    opacity: 0;
+}
+
+.event-container img.event-cover{
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    height: 33vh;
+    z-index: -1;
+    filter: brightness(0.75);
+}
+
+.event-container input:checked ~ .new-event{
+    height: auto;
+    animation: opening 0.3s linear;
+}
+
+@keyframes opening{
+    0%{
+        transform: translateY(-5px);
+    } 100% {
+        transform: translateY(0px);
+    }
+}
+
+.new-event{
+    height: 0;
+    margin-top: 16vh;
+    text-align: center;
+}
+
+.new-event h1{
+    margin-bottom: 15vh;
+    z-index: 1;
+    color: #FFF;
+    font-size: 4.75vmin;
+    font-variant: small-caps;
+    text-shadow: 0px 0px 15px #000, 0px 0px 10px #000;
+}
+
+.event-container::after{
+    content: attr(date);
+    position: absolute;
+    color: #EEE;
+    left: 50%;
+    top: 22vh;
+    font-size: 2.5vmin;
+    transform: translate(-50%);
+    font-variant: small-caps;
+    font-weight: 200;
+    text-shadow: 0px 0px 15px #000, 0px 0px 10px #000;
+}
+
+.new-event img{
+    width: 75%;
+    height: auto;
+}
+
+h1.category{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+h1.category:first-child{
+    margin-top: 30px;
+}
+
+h1.category::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid transparent;
+}
+
+body.light h1.category::after{
+    border-image: linear-gradient(90deg, transparent 25%, var(--main-bright-color), transparent 75%) 1;
+}
+
+body.dark h1.category::after{
+    border-image: linear-gradient(90deg, transparent 25%, var(--main-dark-color), transparent 75%) 1;
+}

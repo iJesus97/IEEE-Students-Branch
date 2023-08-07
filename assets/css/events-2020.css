@@ -1,0 +1,27 @@
+.month-container summary#DiaIEEE2020::after{
+   background-image: url('../img/Octubre_2020/poster.jpg');
+}
+
+.month-container summary#CursoIntroElectrónica2020::after{
+   background-image: url('../img/Marzo_2020/photo4.jpg');
+}
+
+.month-container summary#VisitaIndustrialPEMEX2020::after{
+   background-image: url('../img/misc/tec.jpg');
+}
+
+.month-container summary#OpenDayITSA::after{
+   background-image: url('../img/Marzo_2020/photo1.jpeg');
+}
+
+.month-container summary#VisitaIndustrialBMW2020::after{
+   background-image: url('../img/Febrero_2020/photo8.jpg');
+}
+
+.month-container summary#CursoDrones2020::after{
+   background-image: url('../img/Febrero_2020/photo5.jpg');
+}
+
+.month-container summary#ReunionRamasEstudiantiles2020::after{
+   background-image: url('../img/Febrero_2020/photo3.jpg');
+}

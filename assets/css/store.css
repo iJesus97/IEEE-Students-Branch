@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url('../svg/logos.svg');
+    background-size: 25vw;
+}
+
+.content h1{
+    font-variant: small-caps;
+    margin: 0;
+    font-size: 5vmin;
+    font-weight: 400;
+}
+
+.content p{
+    font-size: 3vmin;
+}
+
+a:visited{
+    color: #002855;
+}
+
+@media screen and (min-width: 750px){
+    .content a{
+        position: relative;
+    }
+    
+    .content a::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #002855;
+        transform: scaleX(0) translateY(3px);
+        transition: 1s;
+    }
+    
+    .content a:hover::after{
+        transform: scaleX(1) translateY(3px);
+    }
+}
+
+@media screen and (max-width: 750px){
+    .content a{
+        background-color: #00629b;
+        color: #FFF;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+
+    .content a:hover{
+        background-color: #002855;
+    }
+}
+
+.elements-container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.elements-container .item {
+    min-width: 30%;
+    border: 1px solid var(--main-dark-color);
+    box-sizing: content-box;
+    padding: 5px;
+    margin: 5px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 350px;
+    position: relative;
+    text-align: center;
+}
+
+.elements-container .item img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.elements-container .item h3 {
+    font-size: 14px;
+}
+
+.elements-container .item p {
+    font-size: 12px;
+}
+
+.elements-container .item .cantidad label {
+    display: block;
+}
+
+.elements-container .item .cantidad button {
+    display: inline;
+    width: 20px;
+}

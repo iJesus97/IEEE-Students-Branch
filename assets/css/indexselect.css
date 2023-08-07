@@ -1,0 +1,206 @@
+*{
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+body{
+  background-color: #000;
+  overflow: hidden;
+}
+
+body::after{
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100vw;
+  background-image: url('../svg/greetings.svg');
+  background-size: 75vmin;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.servicios-IEEE {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 46px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.meta-nav {
+  padding: 0px 0px 0px 0px;
+  color: #fff;
+  float: left;
+  width: 700px;
+  margin: auto;
+  top: 0;
+  height: 46px;
+  width: 100%;
+}
+
+.meta-nav p a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.meta-nav p {
+  padding-left: 15px;
+  width: 100%;
+}
+
+.meta-nav p a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.meta-nav a:link,
+.meta-nav a:visited,
+.meta-nav a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 890px){
+  body::after{
+    top: 46px;
+    height: calc(100vh - 46px);
+    background-position: 5% center;
+  }
+
+  .main-content{
+    color: #fff;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    margin: 0;
+    background: #002855;
+    height: 100vh;
+    width: 55%;
+    clip-path: polygon(15% 46px, 100% 46px, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 7.5%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 890px){
+  body::after{
+    top: 0;
+    height: 100vh;
+    background-position: center 25%;
+  }
+  
+  .servicios-IEEE{
+    display: none;
+  }  
+
+  .main-content{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    clip-path: ellipse(120% 80% at 50% 100%);
+    padding: 100px 50px 5vh;
+  }
+}
+
+.main-content{
+  color: #fff;
+  position: fixed;
+  text-align: center;
+  margin: 0;
+  background: #002855;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-content a{
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #002855;
+  font-size: 0.75em;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  transition: 1s;
+  position: relative;
+  background-color: #DDD;
+  border-radius: 15px;
+}
+
+.main-content a:hover{
+  background-color: #AAA;
+}
+
+.main-content p{
+  margin-bottom: 35px;
+  font-size: 0.9em;
+}
+
+.main-content h1{
+  font-weight: 500;
+  font-variant: small-caps;
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .3s ease;
+}
+.component-fade-enter, .component-fade-leave-to {
+  opacity: 0;
+}
+
+.controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.controls > div input{
+  margin: 0 15px;
+}
+
+.controls input{
+  position: relative;
+}
+
+.controls label{
+  font-size: 0.8em;
+}
+
+.controls input:checked::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '\02714';
+  width: 13px;
+  height: 13px;
+  color: #F00;
+  transform: translate(-1px, -11px);
+  font-size: 1.5em;
+}
+
+.controls input::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+}
